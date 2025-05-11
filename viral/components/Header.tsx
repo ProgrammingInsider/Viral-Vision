@@ -42,13 +42,13 @@ const Header = () => {
     <div>
       {/* Header Wrapper */}
       <div
-        className={`lg:flex justify-between items-center background w-screen px-8 pr-7 h-24 header-bg border-color box-shadow transition-all duration-300 ${
+        className={`lg:flex justify-between items-center background w-screen h-24 header-bg border-color box-shadow transition-all duration-300 ${
           isSticky ? "fixed top-0 left-0 right-0 z-50" : "relative"
         }`}
       >
         {/* Logo + Hamburger */}
         <div className="lg:flex h-full w-full max-w-7xl mx-auto">
-          <div className="lg:rounded-s-full flex h-full justify-between items-center w-full md:w-4/5 mx-auto lg:max-w-7xl">
+          <div className="lg:rounded-s-full flex h-full justify-between items-center w-11/12 mx-auto lg:max-w-7xl">
             <Link href="/" className="font-bold primary-text text-2xl">
               <Image
                 src={"/images/Logo.png"}

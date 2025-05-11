@@ -15,8 +15,8 @@ const OurWorksSection = ({button=true,ourWorks}:{button?:boolean,ourWorks:OurWor
   return (
     <div className="flex flex-col items-center justify-center w-full h-full py-24">
       <h1 className="sectionName">Our Works</h1>
-      <h1 className="sectionHeader">Showcasing Results, Creativity & Impact</h1>
-      <p className="text-base text-center max-w-2xl">From viral videos to standout designs, explore how we help brands grow and shine across every digital platform.</p>
+      <h1 className="sectionHeader px-3">Showcasing Results, Creativity & Impact</h1>
+      <p className="text-base text-center max-w-2xl px-3">From viral videos to standout designs, explore how we help brands grow and shine across every digital platform.</p>
 
       <div className="mt-16 columns-1 sm:columns-2 md:columns-3 gap-6 px-6 w-full max-w-7xl space-y-6">
         {ourWorks.map((item, index) => {

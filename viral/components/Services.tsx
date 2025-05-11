@@ -64,8 +64,8 @@ const Services = () => {
   return <>
     <div className="flex flex-col items-center justify-center w-full h-full py-24">
       <h1 className="sectionName">Our Core Services</h1>
-      <h1 className="sectionHeader">Comprehensive Digital Marketing Solutions</h1>
-      <p className="text-base text-center">From strategy to execution—we offer everything you need to succeed online.</p>
+      <h1 className="sectionHeader px-3">Comprehensive Digital Marketing Solutions</h1>
+      <p className="text-base text-center px-3">From strategy to execution—we offer everything you need to succeed online.</p>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 flex-wrap items-center justify-center max-w-6xl w-full gap-4 mx-auto p-4 mt-12">
             {services.map((service, index) => (

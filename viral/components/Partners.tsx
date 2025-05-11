@@ -28,8 +28,8 @@ const Partners = () => {
     <div className="relative overflow-hidden py-24 section-two-bg">
 
       <h1 className="sectionName text-center">Our Partners</h1>
-      <h2 className="sectionHeader text-center">Trusted by Industry Leaders</h2>
-      <p className="text-base text-center max-w-2xl mx-auto">We’re proud to collaborate with brands that inspire growth, innovation, and excellence.</p>
+      <h2 className="sectionHeader text-center px-3">Trusted by Industry Leaders</h2>
+      <p className="text-base text-center max-w-2xl mx-auto px-3">We’re proud to collaborate with brands that inspire growth, innovation, and excellence.</p>
 
       {/* Scrolling Container */}
       <div className="mt-16 overflow-hidden w-full relative h-32">

@@ -38,8 +38,8 @@ const WhyUs = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full py-24">
         <h1 className="sectionName">Why Choose Us</h1>
-        <h1 className="sectionHeader">Your Digital Growth Partner</h1>
-        <p className="text-base text-center">We’re proud to collaborate with brands that inspire growth, innovation, and excellence.</p>
+        <h1 className="sectionHeader px-3">Your Digital Growth Partner</h1>
+        <p className="text-base text-center px-3">We’re proud to collaborate with brands that inspire growth, innovation, and excellence.</p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 flex-wrap items-center justify-center max-w-6xl w-full gap-4 mx-auto p-4 mt-12">
             {
                 WhyChooseUs.map((item, index) => (
