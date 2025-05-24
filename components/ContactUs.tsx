@@ -1,40 +1,49 @@
 "use client"
 
 import { MdEmail } from "react-icons/md";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebook, FaTiktok, FaInstagram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
-import { PiWhatsappLogoBold } from "react-icons/pi";
 import { IoLocation } from "react-icons/io5";
 import SocialMedia from "./SocialMedia";
 import React, { useRef, useState } from 'react';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 
 const socialLinks = [
   {
-    name: "Linkedin",
-    icon: <FaLinkedinIn className="text-xl" />,
-    link: "#"
+    name: "Facebook",
+    icon: <FaFacebook className="text-xl" />,
+    link: "https://www.facebook.com/viralvisiondigitalmarketing"
+  },
+  {
+    name: "Tiktok",
+    icon: <FaTiktok className="text-xl" />,
+    link: "https://tiktok.com/@viralvisiondigitalmarket"
+  },
+  {
+    name: "Instagram",
+    icon: <FaInstagram className="text-xl" />,
+    link: "https://www.instagram.com/viral_vision_digital_marketing"
   },
   {
     name: "Telegram",
     icon: <FaTelegramPlane className="text-xl" />,
-    link: "#"
+    link: "https://t.me/Viral_Vision"
   },
   {
-    name: "WhatsApp",
-    icon: <PiWhatsappLogoBold className="text-xl" />,
-    link: "#"
-  }
+    name: "Linkedin",
+    icon: <FaLinkedinIn className="text-xl" />,
+    link: "https://www.linkedin.com/company/viralvisiondigitalmarketing/"
+  },
 ]
 
-// const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-// const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-// const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 
-// if (!PUBLIC_KEY || !SERVICE_ID || !TEMPLATE_ID) {
-//   throw new Error("Missing EmailJS configuration. Please check your environment variables.");
-// }
+if (!PUBLIC_KEY || !SERVICE_ID || !TEMPLATE_ID) {
+  throw new Error("Missing EmailJS configuration. Please check your environment variables.");
+}
 
 const ContactUs = () => {
 
@@ -48,22 +57,24 @@ const ContactUs = () => {
 
     setLoading(true);
 
-    // emailjs
-    //   .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
-    //     publicKey: PUBLIC_KEY ,
-    //   })
-    //   .then(
-    //     () => {
-    //       alert('Message sent successfully!');
-    //       if(!form.current) return;
-    //       form.current.reset();
-    //     },
-    //     () => {
-    //       alert('Failed to send the message, please try again.')
-    //     },
-    //   ).finally(() => {
-    //     setLoading(false); 
-    //   });
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+        publicKey: PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          alert('Message sent successfully!');
+          if(!form.current) return;
+          form.current.reset();
+        },
+        (err) => {
+          console.log(err);
+          
+          alert('Failed to send the message, please try again.')
+        },
+      ).finally(() => {
+        setLoading(false); 
+      });
   };
 
   return <>
@@ -145,7 +156,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h1 className="heading-color font-bold text-xl mb-2">Location</h1>
-              <p className="para text-sm sm:text-base">Ethiopia, Addis Ababa, Haya Hulet</p>
+              <p className="para text-sm sm:text-base">Ethiopia, Addis Ababa, Mickey Leland st.</p>
             </div>
           </div>
           <div className="flex items-center gap-5 border border-gray-200 p-4 my-5 rounded-lg mx-auto">
@@ -154,8 +165,12 @@ const ContactUs = () => {
             </div>
             <div>
               <h1 className="heading-color font-bold text-xl mb-2">Contact</h1>
-              <p className="para text-sm sm:text-base">Phone: +25191234567</p>
-              <p className="para text-sm sm:text-base">Email: viralvision@gmail.com</p>
+              <p className="para text-sm sm:text-base flex gap-1 items-center"><span className="w-14">Phone:</span><span>+251924434904</span></p>
+              <p className="para text-sm sm:text-base flex gap-1 items-center">
+                <span className="w-14"></span><span>+251996555298</span></p>
+              <p className="para text-sm sm:text-base flex gap-1 items-center">
+                <span className="w-14"></span><span>+251947598917</span></p>
+              <p className="para text-sm sm:text-base">Email: viralvision2017@gmail.com</p>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center gap-2 border border-gray-200 p-4 my-5 rounded-lg mx-auto">

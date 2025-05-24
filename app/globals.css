@@ -25,10 +25,13 @@
   --input-placeholder: #adb5bd;
 
   /* Buttons */
-  --btn-primary-bg: rgb(16, 98, 254);
-  --primary-text: #1062fe;
+  --btn-primary-bg: #4167b0;
+  --primary-text: #4167b0;
+  /* --btn-primary-bg: rgb(16, 98, 254);
+  --primary-text: #1062fe; */
   --btn-primary-text: #ffffff;
-  --btn-primary-hover: #009AFF;
+  --btn-primary-hover: #355298;
+  /* --btn-primary-hover: #009AFF; */
 
   --btn-secondary-bg: rgb(0, 0, 0);
   --secondary-text: rgb(0, 0, 0);
@@ -44,8 +47,10 @@
   --table-text: #212529;
 
   /* Misc */
-  --link-color: rgb(16, 98, 254);
-  --link-hover: #009AFF;
+  --link-color: #4167b0;
+  --link-hover: #355298;
+  /* --link-color: rgb(16, 98, 254);
+  --link-hover: #009AFF; */
   --card-bg: #ffffff;
   --border-color: #E7E7E7;
 

@@ -1,107 +1,111 @@
-
 export const PackagesData = () => [
     {
         name: "Basic",
         good_for: "Good for startups & local businesses starting social media presence",
-        price: "50,000 ETB/month ",
+        // price: "40,000 ETB/month ",
+        price: "Custom pricing available, \ncontact us",
         description: [
-            "10 Video Contents", 
-            "4 Graphics",
+            "15 Video Contents", 
+            "5 Graphics",
             "Host Model",
-            "10 Graphics Caption Content",
-            "On 2 platforms (TikTok and Instagram)",
+            "15 Graphics Caption Content",
+            "On 3 platforms (TikTok, Facebook and Instagram)",
             "Full Video Production"
         ],
         Projected_Growth: [
-            "1000 followers and 5000 views per 1 month on TikTok",
-            "3000 followers and 10000 views per 3 months on TikTok",
-            "5000 followers and 15000 views per 6 month on TikTok",
-            "500 followers on Instagram",
-            "1000 followers on Instagram",
+            // "1000 followers and 5000 views within 1 month on TikTok",
+            "5K followers within 3 months on TikTok",
+            "8K followers within 6 months on TikTok",
+            "1K followers within 3 months on Instagram",
+            "2.5K followers within 6 months on Instagram",
         ],
     },
 
     {
         name: "Standard",
         good_for: "Great for growing brands looking to boost engagement",
-        price: "70,000 ETB/month ",
+        // price: "60,000 ETB/month ",
+        price: "Custom pricing available, \ncontact us",
         description: [
-            "15 Video Contents", 
-            "6 Graphics",
+            "20 Video Contents", 
+            "8 Graphics",
             "Host Model",
-            "15 Graphics Caption Content",
-            "On 2 platforms (TikTok and Instagram)",
+            "20 Graphics Caption Content",
+            "On 3 platforms (TikTok, Facebook and Instagram)",
             "Full Video Production"
         ],
         Projected_Growth: [
-            "1500 followers and 10000 views per 1 month on TikTok",
-            "5000 followers and 15000 views per 3 months on TikTok",
-            "8000 followers and 30000 views per 6 month on TikTok",
-            "1000 followers on Instagram",
-            "2500 followers on Instagram",
+            // "1500 followers within 1 month on TikTok",
+            "7K followers within 3 months on TikTok",
+            "10K followers within 6 months on TikTok",
+            "1.2K followers within 3 months on Instagram",
+            "3K followers within 6 months on Instagram",
         ],
     },
 
     {
         name: "Advanced",
         good_for: "Perfect for active brands ready to scale fast",
-        price: "90,000 ETB/month ",
+        // price: "80,000 ETB/month ",
+        price: "Custom pricing available, \ncontact us",
         description: [
-            "20 Video Contents", 
+            "25 Video Contents", 
             "10 Graphics",
             "Host Model",
-            "20 Graphics Caption Content",
-            "On 2 platforms (TikTok and Instagram)",
+            "25 Graphics Caption Content",
+            "On 3 platforms (TikTok, Facebook and Instagram)",
             "Full Video Production"
         ],
         Projected_Growth: [
-            "2000 followers and 10000 views per 1 month on TikTok",
-            "6000 followers and 20000 views per 3 months on TikTok",
-            "10000 followers and 40000 views per 6 month on TikTok",
-            "1200 followers on Instagram",
-            "3000 followers on Instagram",
+            // "2000 followers and 10000 views per 1 month on TikTok",
+            "9K followers within 3 months on TikTok",
+            "12K followers within 6 months on TikTok",
+            "1.5K followers within 3 months on Instagram",
+            "4K followers within 6 months on Instagram",
         ],
     },
 
     {
         name: "Premium",
         good_for: "Ideal for established brands focused on reach & influence",
-        price: "110,000 ETB/month ",
+        // price: "100,000 ETB/month ",
+        price: "Custom pricing available, \ncontact us",
         description: [
-            "25 Video Contents", 
+            "30 Video Contents", 
             "15 Graphics",
             "Host Model",
-            "25 Graphics Caption Content",
-            "On 2 platforms (TikTok and Instagram)",
+            "30 Graphics Caption Content",
+            "On 3 platforms (TikTok, Facebook and Instagram)",
             "Full Video Production"
         ],
         Projected_Growth: [
-            "3000 followers and 15000 views per 1 month on TikTok",
-            "8000 followers and 30000 views per 3 months on TikTok",
-            "12000 followers and 50000 views per 6 month on TikTok",
-            "1500 followers on Instagram",
-            "4000 followers on Instagram"
+            // "3000 followers and 15000 views per 1 month on TikTok",
+            "11K followers within 3 months on TikTok",
+            "15K followers within 6 months on TikTok",
+            "2K followers within 3 months on Instagram",
+            "5K followers within 6 months on Instagram"
         ],
     },
 
     {
         name: "Ultimate",
         good_for: "Best for high-performing brands aiming for viral growth",
-        price: "130,000 ETB/month ",
+        // price: "120,000 ETB/month ",
+        price: "Custom pricing available, \ncontact us",
         description: [
-            "30 Video Contents", 
+            "35 Video Contents", 
             "20 Graphics",
             "Host Model",
-            "30 Graphics Caption Content",
-            "On 2 platforms (TikTok and Instagram)",
+            "35 Graphics Caption Content",
+            "On 3 platforms (TikTok, Facebook and Instagram)",
             "Full Video Production"
         ],
         Projected_Growth: [
-            "4000 followers and 25000 views per 1 month on TikTok",
-            "10000 followers and 50000 views per 3 months on TikTok",
-            "15000 followers and 70000 views per 6 month on TikTok",
-            "2000 followers on Instagram",
-            "5000 followers on Instagram"
+            // "4000 followers and 25000 views per 1 month on TikTok",
+            "15K followers within 3 months on TikTok",
+            "20K followers within 6 months on TikTok",
+            "3K followers within 3 months on Instagram",
+            "6K followers within 6 months on Instagram"
         ],
     }
     

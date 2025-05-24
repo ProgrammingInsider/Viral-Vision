@@ -10,7 +10,7 @@ const Inspiration = () => {
             <h1 className="font-bold text-5xl text-white text-center px-3">Ready to Elevate Your Brand?</h1>
             <p className="text-base text-center text-white md:w-1/2 px-8">Let’s turn your digital vision into reality. Whether you’re starting fresh or scaling up, we’re here to help you grow with creativity,strategy, and results.</p>
             <div className='flex gap-8'>
-                <h1 className='font-black text-3xl text-white'>+25191234567</h1>
+                <h1 className='font-black text-3xl text-white'>+251924434904</h1>
                 <Link href={'/contactus'} className='white border-radius heading-color font-bold bg-red-50 text-lg p-2 px-4'>Contact Us</Link>
             </div>
         </div>

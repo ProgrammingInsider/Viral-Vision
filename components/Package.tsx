@@ -6,7 +6,7 @@ const Package = ({name, good_for, price, description, Projected_Growth}:{name:st
     <div className="flex flex-col gap-8 justify-center w-full h-full p-6 sm:max-w-96 rounded-lg card-bg border-radius border col-span-1 box-shadow">
         <h1 className="text-lg sm:text-md heading-color font-black">{name}</h1>
         <p className="text-base">{good_for}</p>
-        <pre className="text-xl font-bold heading-color mt-4">{price}</pre>
+        <p className="text-lg font-bold heading-color mt-4">{price}</p>
 
         <div>
             <h1 className="text-lg font-medium heading-color border-b border-b-gray-400 mt-4">Offers</h1>

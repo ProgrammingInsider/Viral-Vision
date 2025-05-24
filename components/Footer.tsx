@@ -1,6 +1,37 @@
 import Link from 'next/link'
-import { FaLinkedinIn } from "react-icons/fa";
-import { PiWhatsappLogoBold } from "react-icons/pi";
+import { FaLinkedinIn, FaFacebook, FaTiktok, FaInstagram } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import SocialMedia from './SocialMedia';
+
+
+export const socialLinks = [
+  {
+    name: "Facebook",
+    icon: <FaFacebook className="text-xl" />,
+    link: "https://www.facebook.com/viralvisiondigitalmarketing"
+  },
+  {
+    name: "Tiktok",
+    icon: <FaTiktok className="text-xl" />,
+    link: "https://tiktok.com/@viralvisiondigitalmarket"
+  },
+  {
+    name: "Instagram",
+    icon: <FaInstagram className="text-xl" />,
+    link: "https://www.instagram.com/viral_vision_digital_marketing"
+  },
+  {
+    name: "Telegram",
+    icon: <FaTelegramPlane className="text-xl" />,
+    link: "https://t.me/Viral_Vision"
+  },
+  {
+    name: "Linkedin",
+    icon: <FaLinkedinIn className="text-xl" />,
+    link: "https://www.linkedin.com/company/viralvisiondigitalmarketing/"
+  },
+]
+
 
 const Footer = () => {
   return (
@@ -28,21 +59,20 @@ const Footer = () => {
         </div>
         <div className='w-11/12 max-w-xl mx-auto'>
           <h1 className='footerHeading text-white font-bold text-2xl mb-6'>Get In Touch</h1>
-          <p className='mb-3'><b className='text-white text-base'>Location: </b>Ethiopia, Addis Ababa, Haya Hulet</p>
-          <p className='mb-3'><b className='text-white text-base'>Phone: </b>+25191234567</p>
-          <p><b className='text-white text-base'>Mail Us: </b>viralvision@gmail.com
+          <p className='mb-3'><b className='text-white text-base'>Location: </b>Ethiopia, Addis Ababa, Mickey Leland st.</p>
+          <p className='mb-3'><b className='text-white text-base'>Phone: </b>+251924434904/ +251996555298/ +251947598917</p>
+          <p><b className='text-white text-base'>Mail Us: </b>viralvision2017@gmail.com
           </p>
         </div>
       </div>
       <div className='lower-footer h-20 text-white flex justify-between items-center px-5 gap-5'>
         <span className='text-base'>© 2025 Viral Vision. All Rights Reserved.</span>
         <div className="flex justify-center items-center rounded-full gap-2">
-          <Link href="#" target="_blank" className='w-8 h-8 flex justify-center items-center btn-primary-bg rounded-full p-2'>
-          <FaLinkedinIn  className="text-xl text-white" />
-          </Link>
-          <Link href="https://wa.me/" target="_blank" className='w-8 h-8 flex justify-center items-center btn-primary-bg rounded-full p-2'>
-          <PiWhatsappLogoBold className="text-xl text-white " />
-          </Link>
+          {
+            socialLinks.map((social, index) => (
+              <SocialMedia key={index} name={social.name} icon={social.icon} link={social.link} />
+            ))
+          }
         </div>
 </div>
     </div>
