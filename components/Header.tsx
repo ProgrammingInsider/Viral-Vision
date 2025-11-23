@@ -1,11 +1,11 @@
 'use client';
 
-import { RxHamburgerMenu } from "react-icons/rx";
-import { MdOutlineClose } from "react-icons/md";
-import Link from "next/link";
-import { useState, useEffect } from "react";
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { MdOutlineClose } from 'react-icons/md';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import Image from "next/image";
+import Image from 'next/image';
 
 const Header = () => {
   const [hideMenu, setHideMenu] = useState(false);
@@ -13,11 +13,11 @@ const Header = () => {
   const pathname = usePathname();
 
   const navLinks = [
-    { path: "/", name: "Home" },
-    { path: "/aboutus", name: "About Us" },
-    { path: "/ourservices", name: "Our Services" },
-    { path: "/ourworks", name: "Our Works" },
-    { path: "/contactus", name: "Contact Us" },
+    { path: '/', name: 'Home' },
+    { path: '/aboutus', name: 'About Us' },
+    { path: '/ourservices', name: 'Our Services' },
+    { path: '/ourworks', name: 'Our Works' },
+    { path: '/contactus', name: 'Contact Us' },
   ];
 
   // Handle sticky header
@@ -26,15 +26,15 @@ const Header = () => {
       setIsSticky(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Disable body scroll when menu is open
   useEffect(() => {
-    document.body.style.overflow = hideMenu ? "hidden" : "";
+    document.body.style.overflow = hideMenu ? 'hidden' : '';
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     };
   }, [hideMenu]);
 
@@ -43,21 +43,23 @@ const Header = () => {
       {/* Header Wrapper */}
       <div
         className={`lg:flex justify-between items-center background w-screen h-24 header-bg border-color box-shadow transition-all duration-300 ${
-          isSticky ? "fixed top-0 left-0 right-0 z-50" : "relative"
+          isSticky ? 'fixed top-0 left-0 right-0 z-50' : 'relative'
         }`}
       >
         {/* Logo + Hamburger */}
         <div className="lg:flex h-full w-full max-w-7xl mx-auto">
           <div className="lg:rounded-s-full flex h-full justify-between items-center w-11/12 mx-auto lg:max-w-7xl">
             <Link href="/" className="font-bold primary-text text-2xl">
-              <Image
-                src={"/images/Logo.png"}
+              {/* <Image
+                src={'/images/Logo.png'}
                 alt={`Viral Vision Logo`}
                 width={300}
                 height={100}
                 className="w-44 h-full object-cover"
                 priority
-            />
+              /> */}
+              <h1 className="font-extrabold text-5xl">BSP</h1>
+              <p className="italic text-xs">"Custom solutions. Real impact."</p>
               {/* ViralVision */}
             </Link>
             <RxHamburgerMenu
@@ -78,7 +80,7 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         <nav
           className={`fixed background top-0 left-0 bottom-0 w-full sm:w-80 flex flex-col justify-center lg:items-center text-xl heading font-medium p-8 transform transition-transform duration-500 z-50 header-bg lg:z-0 ${
-            hideMenu ? "translate-x-0" : "-translate-x-full"
+            hideMenu ? 'translate-x-0' : '-translate-x-full'
           } lg:relative lg:flex-row lg:justify-end lg:gap-7 lg:translate-x-0 lg:w-auto`}
         >
           <MdOutlineClose
@@ -90,7 +92,7 @@ const Header = () => {
               key={path}
               href={path}
               className={`py-5 border-b border-gray-200 lg:border-0 lg:py-0 text-nowrap text-base ${
-                pathname === path ? "primary-text font-bold" : "header-text"
+                pathname === path ? 'primary-text font-bold' : 'header-text'
               }`}
               onClick={() => setHideMenu(false)}
             >
