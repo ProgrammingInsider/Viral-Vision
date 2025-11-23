@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { FaRegCalendarAlt } from 'react-icons/fa';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { OurWorksType } from '@/utils/types';
 
 const WorkCard = ({ item }: { item: OurWorksType }) => {
@@ -94,7 +94,7 @@ const WorkCard = ({ item }: { item: OurWorksType }) => {
         </div>
 
         {/* Redirect Button (optional) */}
-        <div>
+        {/* <div>
           {item.redirectLink && (
             <button className="mt-2">
               <Link
@@ -106,7 +106,7 @@ const WorkCard = ({ item }: { item: OurWorksType }) => {
               </Link>
             </button>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

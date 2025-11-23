@@ -96,7 +96,7 @@ const Footer = () => {
           </p>
           <p className="mb-3">
             <b className="text-white text-base">Phone: </b>+251924434904/
-            +251922112208/ +251924434904
+            +251922112208
           </p>
           <p>
             <b className="text-white text-base">Mail Us: </b>
@@ -106,7 +106,7 @@ const Footer = () => {
       </div>
       <div className="lower-footer h-20 text-white flex justify-between items-center px-5 gap-5">
         <span className="text-base">
-          © 2025 Bespoke Solution Provider. All Rights Reserved.
+          © 2025 Bespoke SP. All Rights Reserved.
         </span>
         <div className="flex justify-center items-center rounded-full gap-2">
           {socialLinks.map((social, index) => (

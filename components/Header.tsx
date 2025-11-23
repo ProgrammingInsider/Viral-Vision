@@ -60,7 +60,7 @@ const Header = () => {
               /> */}
               <h1 className="font-extrabold text-5xl">BSP</h1>
               <p className="italic text-xs">
-                &quot;ustom solutions. Real impact.&quot;
+                &quot;Custom solutions. Real impact.&quot;
               </p>
               {/* ViralVision */}
             </Link>
