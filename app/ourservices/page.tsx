@@ -1,10 +1,10 @@
 import Banner from '@/components/Banner';
 import ContactUs from '@/components/ContactUs';
 import Inspiration from '@/components/Inspiration';
-import OurPackages from '@/components/OurPackages';
+// import OurPackages from '@/components/OurPackages';
 import OurServicesParagraph from '@/components/OurServicesParagraph';
 import Services from '@/components/Services';
-import { PackagesData } from '@/utils/localstorage';
+// import { PackagesData } from '@/utils/localstorage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

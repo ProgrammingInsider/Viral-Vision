@@ -2,8 +2,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import Link from 'next/link';
+import { OurWorksType } from '@/utils/types';
 
-const WorkCard = ({ item }: any) => {
+const WorkCard = ({ item }: { item: OurWorksType }) => {
   const [expanded, setExpanded] = useState(false);
 
   // Short preview = first paragraph only

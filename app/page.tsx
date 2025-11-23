@@ -2,11 +2,11 @@ import AboutUsParagraph from '@/components/AboutUsParagraph';
 import ContactUs from '@/components/ContactUs';
 import Hero from '@/components/Hero';
 import Inspiration from '@/components/Inspiration';
-import OurPackages from '@/components/OurPackages';
+// import OurPackages from '@/components/OurPackages';
 import Partners from '@/components/Partners';
 import WhyUs from '@/components/WhyUs';
 import OurWorks from '@/components/OurWorks';
-import { PackagesData, OurWorksData } from '@/utils/localstorage';
+import { OurWorksData } from '@/utils/localstorage';
 
 export default function Home() {
   return (

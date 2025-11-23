@@ -5,7 +5,7 @@ import { MdOutlineClose } from 'react-icons/md';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Header = () => {
   const [hideMenu, setHideMenu] = useState(false);
@@ -59,7 +59,9 @@ const Header = () => {
                 priority
               /> */}
               <h1 className="font-extrabold text-5xl">BSP</h1>
-              <p className="italic text-xs">"Custom solutions. Real impact."</p>
+              <p className="italic text-xs">
+                &quot;ustom solutions. Real impact.&quot;
+              </p>
               {/* ViralVision */}
             </Link>
             <RxHamburgerMenu
