@@ -195,7 +195,7 @@ export const OurWorksData = (): any[] => [
     country: 'Oregon, USA',
     flag: '/images/works/usa-flag.png',
     desc: [
-      `<p>Auxilary.ai is a cutting-edge AI-powered data preparation platform based in Oregon, USA. It allows users to import datasets from multiple sources such as CSV, Excel, Google Sheets, SQL databases, and AWS S3—and clean them using natural language commands powered by OpenAI.</p>`,
+      `<p>Auxilary.ai is a cutting-edge AI-powered data preparation platform based in Oregon, USA. It allows users to import datasets from multiple sources such as CSV, Excel, Google Sheets, SQL databases, and AWS S3 and clean them using natural language commands powered by OpenAI.</p>`,
       `<p>We built the platform end-to-end, including system architecture, backend services, frontend UI, dataset versioning, NLP-to-SQL chat capabilities, undo operations, and EDA tools like outlier detection, correlation heatmaps, and statistical summaries. The system also supports basic machine learning models for quick experimentation.</p>`,
       `<p>This project demonstrates advanced engineering, AI integration, and product leadership, delivering a robust solution that empowers users to work with data effortlessly.</p>`,
     ],
@@ -270,7 +270,7 @@ export const OurWorksData = (): any[] => [
     country: 'Addis Ababa, Ethiopia',
     flag: '/images/works/ethio-flag.png',
     desc: [
-      `<p>This portfolio website was built to showcase a developer’s skills, experience, personal information, and project history in a clean and modern interface. It highlights technical expertise, certifications, testimonials, and completed projects through an intuitive and responsive layout.</p>`,
+      `<p>This portfolio website was developed to showcase a developer’s skills, experience, certifications, testimonials, and completed projects through a clean, modern, and responsive interface. In addition to being a personal portfolio, we prepared this design as a free reusable template to support Ethiopian job-seeking youth who may not have access to professionally built portfolios, helping them confidently present their skills and opportunities..</p>`,
     ],
     year: '2025',
     tags: [
