@@ -270,7 +270,7 @@ export const OurWorksData = (): any[] => [
     country: 'Addis Ababa, Ethiopia',
     flag: '/images/works/ethio-flag.png',
     desc: [
-      `<p>This portfolio website was developed to showcase a developer’s skills, experience, certifications, testimonials, and completed projects through a clean, modern, and responsive interface. In addition to being a personal portfolio, we prepared this design as a free reusable template to support Ethiopian job-seeking youth who may not have access to professionally built portfolios, helping them confidently present their skills and opportunities..</p>`,
+      `<p>This portfolio website was developed to showcase a developer’s skills, experience, certifications, testimonials, and completed projects through a clean, modern, and responsive interface. In addition to being a personal portfolio, we prepared this design as a free reusable template to support Ethiopian job-seeking youth who may not have access to professionally built portfolios, helping them confidently present their skills and opportunities.</p>`,
     ],
     year: '2025',
     tags: [
